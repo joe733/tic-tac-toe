@@ -39,11 +39,7 @@ print('Player 1 - x')
 print('Player 2 - o')
 temp = int(input("Select Player: "))
 coins=['x','y']
-if(temp=="1"):
-    cur_player=player_1
-else:
-    cur_player=player_2
-
+cur_player = player_1 if (temp=="1") else player_2
 while True:
     play(cur_player,aa,ab,ac,ba,bb,bc,ca,cb,cc)
     if hasone():
@@ -56,6 +52,6 @@ ac='3'
 ba='4'
 bb='5'
 bc='6'
-ca='7'          
+ca='7'
 cb='8'
 cc='9'
